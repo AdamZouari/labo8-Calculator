@@ -5,6 +5,11 @@ public class State {
     private Stack<Double> stack;
     private String currentVal;
 
+    public State(){
+        stack = new Stack<Double>();
+        currentVal = "0";
+    }
+
     public void push(Double s){
         stack.push(s);
     }
@@ -22,11 +27,17 @@ public class State {
         return currentVal;
     }
 
-    public void append(String val){
+    public void appendVal(String val){
         currentVal += val;
     }
 
-    public void insert(String val){
-        currentVal = val + currentVal;
+    public void updateVal(String val){
+        currentVal = val;
+    }
+
+    public void cleanStack(){
+        while (!stack.empty()){
+            stack.pop();
+        }
     }
 }
