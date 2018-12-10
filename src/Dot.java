@@ -9,9 +9,6 @@ public class Dot extends Operator{
 
     @Override
     void execute() {
-        if(state.getCurrentVal() == ""){
-            state.updateVal("0");
-        }
         if(!state.getCurrentVal().contains(".")) {
             state.appendVal(dot);
         }
