@@ -47,8 +47,9 @@ public class State {
 
     public void cleanStack(){
         while (!stack.empty()){
-            stack.pop();
+            pop();
         }
+
     }
 
     public String getMemoryStore() {
