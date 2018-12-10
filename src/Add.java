@@ -1,6 +1,6 @@
-public class Divide extends BinaryOperation
-{
-    Divide(State state) {
+public class Add extends BinaryOperation{
+
+    Add(State state) {
         super(state);
     }
 
