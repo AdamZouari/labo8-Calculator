@@ -1,15 +1,20 @@
-public class MoreLess extends Operator{
+public class MoreLess extends NumberCreation{
 
     public MoreLess(State state){
-        this.state = state;
+        super(state);
     }
+
     @Override
-    void execute() {
-        String currentVal = state.getCurrentVal();
+    String create() {
+        return null;
+        /*String currentVal = state.getCurrentVal();
         if( currentVal.charAt(0) == '-'){
             state.updateVal(currentVal.substring(1));
         }else{
             state.updateVal("-" + currentVal);
         }
+        * */
     }
+
+
 }

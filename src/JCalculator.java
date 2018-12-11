@@ -26,7 +26,10 @@ public class JCalculator extends JFrame
   private void update()
   {
     jNumber.setText(state.getCurrentVal());
-    jStack.setListData(state.getStack());
+    if(state.isEmptyStack())
+      jStack.setListData(empty);
+    else
+      jStack.setListData(state.getStack());
   }
 
   /*
@@ -98,7 +101,7 @@ public class JCalculator extends JFrame
     addOperatorButton("+/-", 1, 5, Color.BLUE, new MoreLess(state));
 
     // Operateur point (chiffres apres la virgule ensuite)
-    addOperatorButton(".", 2, 5, Color.BLUE, new Dot(".",state));
+    addOperatorButton(".", 2, 5, Color.BLUE, new Dot(state));
 
     // Operateurs arithmetiques a deux operandes: /, *, -, +
     addOperatorButton("/", 3, 2, Color.RED, new Divide(state));

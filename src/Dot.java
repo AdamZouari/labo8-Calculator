@@ -1,16 +1,17 @@
-public class Dot extends Operator{
+public class Dot extends NumberCreation{
 
-    private String dot;
 
-    public Dot(String dot, State state){
-        this.dot = dot;
-        this.state = state;
+    public Dot(State state){
+        super(state);
     }
 
     @Override
-    void execute() {
-        if(!state.getCurrentVal().contains(".")) {
+    String create() {
+        return null;
+        /*
+        * if(!state.getCurrentVal().contains(".")) {
             state.appendVal(dot);
         }
+        * */
     }
 }
