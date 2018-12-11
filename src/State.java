@@ -5,14 +5,15 @@ public class State {
     private Stack<Double> stack;
     private String currentVal;
     private String memoryStore;
+    private Boolean evaluated;
 
     public State(){
         stack = new Stack<Double>();
         currentVal = "0";
     }
 
-    public void push(Double s){
-        stack.push(s);
+    public void push(Double d){
+        stack.push(d);
     }
 
     public Double pop(){
@@ -58,5 +59,13 @@ public class State {
 
     public void setMemoryStore(String memoryStore) {
         this.memoryStore = memoryStore;
+    }
+
+    public Boolean isEvaluated() {
+        return evaluated;
+    }
+
+    public Boolean isEmptyStack(){
+        return stack.isEmpty();
     }
 }
