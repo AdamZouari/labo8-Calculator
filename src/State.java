@@ -2,14 +2,13 @@ import java.util.Stack;
 
 public class State {
 
-    private Stack<Double> stack;
-    private String currentVal;
-    private String memoryStore;
-    private Boolean evaluated;
+    private Stack<Double> stack = new Stack<Double>();
+    private Double currentVal;
+    private String input, memoryStore;
+    private Boolean isEvaluated, isError;
 
     public State(){
-        stack = new Stack<Double>();
-        currentVal = "0";
+        input = "0";
     }
 
     public void push(Double d){
@@ -34,15 +33,16 @@ public class State {
         return tab;
     }
 
-    public String getCurrentVal() {
+    public Double getCurrentVal() {
         return currentVal;
     }
 
-    public void appendVal(String val){
+    //TODO a checker
+    public void append(String val){
         currentVal += val;
     }
 
-    public void updateVal(String val){
+    public void updateVal(Double val){
         currentVal = val;
     }
 
@@ -62,10 +62,18 @@ public class State {
     }
 
     public Boolean isEvaluated() {
-        return evaluated;
+        return isEvaluated;
     }
 
     public Boolean isEmptyStack(){
         return stack.isEmpty();
+    }
+
+    public Boolean getError() {
+        return isError;
+    }
+
+    public void setError(Boolean error) {
+        isError = error;
     }
 }

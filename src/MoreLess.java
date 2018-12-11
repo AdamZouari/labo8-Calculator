@@ -5,16 +5,13 @@ public class MoreLess extends NumberCreation{
     }
 
     @Override
-    String create() {
-        return null;
-        /*String currentVal = state.getCurrentVal();
-        if( currentVal.charAt(0) == '-'){
-            state.updateVal(currentVal.substring(1));
-        }else{
-            state.updateVal("-" + currentVal);
-        }
-        * */
-    }
+    void create(String val) {
 
+        if( val.charAt(0) == '-'){
+            state.updateVal(val.substring(1));
+        }else{
+            state.updateVal("-" + val);
+        }
+    }
 
 }

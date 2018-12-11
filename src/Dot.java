@@ -6,12 +6,11 @@ public class Dot extends NumberCreation{
     }
 
     @Override
-    String create() {
-        return null;
-        /*
-        * if(!state.getCurrentVal().contains(".")) {
-            state.appendVal(dot);
+    void create(String val) {
+
+        if(!val.contains(".")) {
+            state.appendVal(".");
         }
-        * */
+
     }
 }

@@ -8,14 +8,12 @@ public class Number extends NumberCreation{
     }
 
     @Override
-    String create() {
-        return null;
-        /*
-        * String currentVal = state.getCurrentVal();
-       if(currentVal == "0")
+    void create(String val) {
+
+       if(val == "0")
             state.updateVal(number);
-       else if (currentVal.contains(".") || currentVal.length() > 0){
+       else if (val.contains(".") || val.length() > 0){
            state.appendVal(number);
-       }*/
+       }
     }
 }
