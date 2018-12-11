@@ -6,7 +6,7 @@ public class Square extends UnaryOperation{
     }
 
     @Override
-    Double calcul(String val) {
-        return Double.parseDouble(val) * Double.parseDouble(val);
+    Double calcul(Double val) {
+        return val * val;
     }
 }

@@ -1,3 +1,4 @@
+// TODO voir ou le met dans l'arbo et empecher si evaluer
 public class Supp extends Operator
 {
 

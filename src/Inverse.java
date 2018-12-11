@@ -5,8 +5,8 @@ public class Inverse extends UnaryOperation{
     }
 
     @Override
-    Double calcul(String val) {
+    Double calcul(Double val) {
 
-        return 1/(Double.parseDouble(val));
+        return 1/val;
     }
 }

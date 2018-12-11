@@ -10,6 +10,7 @@ public class State {
     public State(){
         input = "0";
         memoryStore = "0";
+        isEvaluated = false;
     }
 
     public void push(Double d){
@@ -51,21 +52,17 @@ public class State {
         return currentVal;
     }
 
-    public void updateVal(Double val){
-        currentVal = val;
-    }
+    public void updateVal(Double val){currentVal = val;}
 
-    public void appendInput(String val){
-        input += val;
-    }
 
-    public String getInput() {
-        return input;
-    }
+    public String getInput(){return input;}
+
+    public void appendInput(String val){input += val;}
 
     public void updateInput(String val){
         input = val;
     }
+
 
 
 
@@ -76,6 +73,8 @@ public class State {
     public void setMemoryStore(String memoryStore) {
         this.memoryStore = memoryStore;
     }
+
+
 
     public Boolean isEvaluated() {
         return isEvaluated;

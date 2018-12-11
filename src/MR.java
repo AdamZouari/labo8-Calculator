@@ -7,7 +7,7 @@ public class MR extends MemoryOperation {
     // TODO Après un enter le MR supprime l'affichage voir pk
 
 
-    // A GARDER pour les remarques : comme mémory store n'est pas grisé comme dans la calculette windows on init la valeur memoire à 0 (STRING)
+    // TODO A GARDER pour les remarques : comme mémory store n'est pas grisé comme dans la calculette windows on init la valeur memoire à 0 (STRING)
     @Override
     void changeMemory(String val) {
         state.updateInput(state.getMemoryStore());

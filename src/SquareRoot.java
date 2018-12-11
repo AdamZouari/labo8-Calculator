@@ -5,8 +5,8 @@ public class SquareRoot extends UnaryOperation {
     }
 
     @Override
-    Double calcul(String val) {
-        return Math.sqrt(Double.parseDouble(val));
+    Double calcul(Double val) {
+        return Math.sqrt(val);
     }
 }
 
