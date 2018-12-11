@@ -6,7 +6,11 @@ abstract class BinaryOperation extends Operator{
 
     public void execute(){
 
+        state.updateVal(calcul(state.pop(),Double.parseDouble(state.getInput())));
+        state.updateInput(String.valueOf(state.getCurrentVal()));
+        state.setEvaluated(true);
+
     }
 
-    abstract void calcul();
+    abstract Double calcul(Double op1, Double op2);
 }

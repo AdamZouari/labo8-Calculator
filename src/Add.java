@@ -4,8 +4,9 @@ public class Add extends BinaryOperation{
         super(state);
     }
 
-    @Override
-    void calcul() {
 
+    @Override
+    Double calcul(Double op1, Double op2) {
+        return op1 + op2;
     }
 }
