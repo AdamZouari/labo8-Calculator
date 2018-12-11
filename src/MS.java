@@ -1,12 +1,12 @@
-public class MS extends Operator{
+public class MS extends MemoryOperation {
 
     public MS(State state){
-        this.state = state;
+        super(state);
+    }
+// TODO quand un memory store à été fait le prochain nombre doit supprimer celui actuel comme si un operation avait été faite
+    @Override
+    void changeMemory(String val) {
+        state.setMemoryStore(state.getInput());
     }
 
-    @Override
-    void execute() {
-        state.setMemoryStore(state.getCurrentVal());
-        state.updateVal("0");
-    }
 }

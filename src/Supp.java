@@ -7,11 +7,11 @@ public class Supp extends Operator
 
     @Override
     void execute() {
-        String currentVal = state.getCurrentVal();
+        String currentVal = state.getInput();
         if(currentVal.length() <= 1) {
-            state.updateVal("0");
+            state.updateInput("0");
         }else {
-            state.updateVal(state.getCurrentVal().substring(0, state.getCurrentVal().length() - 1));
+            state.updateInput(state.getInput().substring(0, state.getInput().length() - 1));
         }
     }
 }

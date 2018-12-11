@@ -11,9 +11,9 @@ public class Number extends NumberCreation{
     void create(String val) {
 
        if(val == "0")
-            state.updateVal(number);
+            state.updateInput(number);
        else if (val.contains(".") || val.length() > 0){
-           state.appendVal(number);
+           state.appendInput(number);
        }
     }
 }

@@ -9,7 +9,7 @@ public class Dot extends NumberCreation{
     void create(String val) {
 
         if(!val.contains(".")) {
-            state.appendVal(".");
+            state.appendInput(".");
         }
 
     }

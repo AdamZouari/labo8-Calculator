@@ -8,9 +8,9 @@ public class MoreLess extends NumberCreation{
     void create(String val) {
 
         if( val.charAt(0) == '-'){
-            state.updateVal(val.substring(1));
+            state.updateInput(val.substring(1));
         }else{
-            state.updateVal("-" + val);
+            state.updateInput("-" + val);
         }
     }
 

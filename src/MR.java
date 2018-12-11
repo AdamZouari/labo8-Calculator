@@ -1,11 +1,16 @@
-public class MR extends Operator {
+public class MR extends MemoryOperation {
 
     public MR(State state){
-        this.state = state;
+        super(state);
     }
 
+    // TODO Après un enter le MR supprime l'affichage voir pk
+
+
+    // A GARDER pour les remarques : comme mémory store n'est pas grisé comme dans la calculette windows on init la valeur memoire à 0 (STRING)
     @Override
-    void execute() {
-        state.updateVal(state.getMemoryStore());
+    void changeMemory(String val) {
+        state.updateInput(state.getMemoryStore());
     }
+
 }

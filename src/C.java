@@ -1,11 +1,12 @@
-public class C extends Operator {
+public class C extends MemoryOperation {
 
     public C(State state){
-        this.state = state;
+        super(state);
     }
 
     @Override
-    void execute() {
-        state.updateVal("0");
+    void changeMemory(String val) {
+        state.updateInput("0");
     }
+
 }

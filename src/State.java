@@ -9,6 +9,7 @@ public class State {
 
     public State(){
         input = "0";
+        memoryStore = "0";
     }
 
     public void push(Double d){
@@ -33,18 +34,6 @@ public class State {
         return tab;
     }
 
-    public Double getCurrentVal() {
-        return currentVal;
-    }
-
-    //TODO a checker
-    public void append(String val){
-        currentVal += val;
-    }
-
-    public void updateVal(Double val){
-        currentVal = val;
-    }
 
     public void cleanStack(){
         while (!stack.empty()){
@@ -52,6 +41,33 @@ public class State {
         }
 
     }
+
+    public Boolean isEmptyStack(){
+        return stack.isEmpty();
+    }
+
+
+    public Double getCurrentVal() {
+        return currentVal;
+    }
+
+    public void updateVal(Double val){
+        currentVal = val;
+    }
+
+    public void appendInput(String val){
+        input += val;
+    }
+
+    public String getInput() {
+        return input;
+    }
+
+    public void updateInput(String val){
+        input = val;
+    }
+
+
 
     public String getMemoryStore() {
         return memoryStore;
@@ -65,11 +81,11 @@ public class State {
         return isEvaluated;
     }
 
-    public Boolean isEmptyStack(){
-        return stack.isEmpty();
+    public void setEvaluated(Boolean evaluated) {
+        isEvaluated = evaluated;
     }
 
-    public Boolean getError() {
+    public Boolean isError() {
         return isError;
     }
 

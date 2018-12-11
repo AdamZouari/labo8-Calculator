@@ -5,7 +5,7 @@ abstract class UnaryOperation extends Operator {
     }
     public void execute() {
 
-        state.updateVal(String.valueOf(calcul(state.getCurrentVal())));
+        state.updateVal(calcul(state.getInput()));
 
     }
 

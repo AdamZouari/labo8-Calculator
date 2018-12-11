@@ -5,7 +5,7 @@ abstract class NumberCreation extends Operator {
     }
 
     public void execute(){
-        create(state.getCurrentVal());
+        create(state.getInput());
     }
 
     abstract void create(String val);

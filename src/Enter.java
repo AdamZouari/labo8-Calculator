@@ -1,12 +1,13 @@
-public class Enter extends Operator {
+public class Enter extends MemoryOperation {
 
     public Enter(State state){
-        this.state = state;
+        super(state);
     }
 
     @Override
-    void execute() {
-        state.push(Double.parseDouble(state.getCurrentVal()));
-        state.updateVal("0");
+    void changeMemory(String val) {
+        state.push(Double.parseDouble(state.getInput()));
+        state.updateInput("0");
     }
+
 }
