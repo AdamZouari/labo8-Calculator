@@ -1,15 +1,14 @@
 // TODO voir ou le met dans l'arbo et empecher si evaluer
-public class Supp extends Operator
+public class Backspace extends NumberCreation
 {
 
-    public Supp(State state){
-        this.state = state;
+    public Backspace(State state){
+        super(state);
     }
 
     @Override
-    void execute() {
-        String currentVal = state.getInput();
-        if(currentVal.length() <= 1) {
+    void create(String val) {
+        if(val.length() <= 1) {
             state.updateInput("0");
         }else {
             state.updateInput(state.getInput().substring(0, state.getInput().length() - 1));

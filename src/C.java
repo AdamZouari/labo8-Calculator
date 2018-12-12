@@ -5,8 +5,10 @@ public class C extends MemoryOperation {
     }
 
     @Override
-    void changeMemory(String val) {
+    void changeMemory() {
         state.updateInput("0");
+        state.setError(false);
+        state.cleanStack();
     }
 
 }

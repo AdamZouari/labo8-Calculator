@@ -8,10 +8,10 @@ abstract class MemoryOperation extends Operator{
     @Override
     void execute() {
 
-        changeMemory(state.getInput());
+        changeMemory();
 
     }
 
 
-    abstract void changeMemory(String val);
+    abstract void changeMemory();
 }

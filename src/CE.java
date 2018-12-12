@@ -5,9 +5,9 @@ public class CE extends MemoryOperation {
     }
 
     @Override
-    void changeMemory(String val) {
-        state.cleanStack();
+    void changeMemory() {
         state.updateInput("0");
+        state.setError(false);
     }
 
 }

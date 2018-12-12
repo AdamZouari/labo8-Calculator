@@ -9,7 +9,7 @@ public class MR extends MemoryOperation {
 
     // TODO A GARDER pour les remarques : comme mémory store n'est pas grisé comme dans la calculette windows on init la valeur memoire à 0 (STRING)
     @Override
-    void changeMemory(String val) {
+    void changeMemory() {
         state.updateInput(state.getMemoryStore());
     }
 
