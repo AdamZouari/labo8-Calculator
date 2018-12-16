@@ -36,7 +36,7 @@ String coucou(double number) {
   Ce qu'il reste comme erreur :
   
     - backspace après evaluation : soit mettre ce qu'il y a dans numbercration dans les sous classes / soit booleen isEvaluated / le mettre dans une autre classe
-   - MS
+    - MS
     - J'ai pu écrire 06 en faisant . <= 6 - C'est bon 
     -regarder si input = currentVal tous les temps - Il faut justifier
     - Expliquer les erreurs dans le rapport

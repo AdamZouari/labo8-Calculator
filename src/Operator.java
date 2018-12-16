@@ -1,6 +1,6 @@
 abstract class Operator
 {
-  abstract void execute();
+  abstract public void execute();
   protected State state;
 
 }

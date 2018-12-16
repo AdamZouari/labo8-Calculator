@@ -51,7 +51,7 @@ public class Calculator {
 	}
 
 	/**
-	 * Méthode lance la calculatrice
+	 * Méthode qui lance la calculatrice
 	 */
 	public void calcul() {
 		Scanner sin = new Scanner(System.in);

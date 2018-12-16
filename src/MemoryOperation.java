@@ -7,7 +7,7 @@ abstract class MemoryOperation extends Operator{
     }
 
     @Override
-    void execute() {
+    public void execute() {
         changeMemory();
     }
 
