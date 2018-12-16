@@ -20,3 +20,15 @@ String coucou(double number) {
   double fraction = number - (int) number;
   return (fraction != 0) ? String.valueOf(number) : String.valueOf((int) number);
  }
+ 
+ Ce qu'il reste à faire :
+    - checker tous ce qu'il manque et poser les questions (question coucou)
+    - corriger ce qu'il manque
+    - faire les erreur
+    - gérer les exceptions
+    - faire le main de test
+    - commenter
+    - organiser en package & réduire la visibilité
+    - faire le rapport + UML
+    - voir si on peut pas refactorer plus
+    
