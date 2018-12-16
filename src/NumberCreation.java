@@ -6,8 +6,11 @@ abstract class NumberCreation extends Operator {
 
     public void execute(){
 
-            if (state.isEvaluated()) {
-                if(this.getClass() != Backspace.class || state.isStored()) {
+            if (state.isEvaluated() || state.isStored()) {
+                if(this.getClass() == Backspace.class) {
+                    return;
+                }
+                if(!state.isStored()) {
                     state.push(Double.parseDouble(state.getInput()));
                 }
                 state.updateInput("0");
