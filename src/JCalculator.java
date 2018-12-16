@@ -25,7 +25,11 @@ public class JCalculator extends JFrame
    */
   private void update()
   {
-    jNumber.setText(state.getInput());
+    if(state.isError()){
+      jNumber.setText("Error");
+    }else {
+      jNumber.setText(state.getInput());
+    }
     if(state.isEmptyStack())
       jStack.setListData(empty);
     else

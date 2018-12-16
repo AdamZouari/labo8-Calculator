@@ -5,7 +5,7 @@ public class Multiply extends BinaryOperation {
     }
 
     @Override
-    Double calcul(Double op1, Double op2) {
+    double calcul(double op1, double op2) {
         return op1 * op2;
     }
 }

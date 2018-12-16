@@ -3,29 +3,30 @@ import java.util.Stack;
 public class State {
 
     private Stack<Double> stack = new Stack<Double>();
-    private Double currentVal;
+    private double currentVal;
     private String input, memoryStore;
-    private Boolean isEvaluated, isError; //isStored;
+    private Boolean isEvaluated, isError, isStored;
 
     public State(){
         input = "0";
         memoryStore = "0";
         isEvaluated = false;
-       // isStored = false;
+        isError = false;
+        isStored = false;
     }
 
-    public void push(Double d){
+    public void push(double d){
         stack.push(d);
     }
 
-    public Double pop(){
+    public double pop(){
         return stack.pop();
     }
 
     public Double[] getStack() {
         Double[] tab = new Double[stack.size()];
         stack.toArray(tab);
-        Double temp;
+        double temp;
         if(tab.length > 1) {
             for (int i = 0; i < (tab.length / 2); i++) {
                 temp = tab[i];
@@ -49,11 +50,11 @@ public class State {
     }
 
 
-    public Double getCurrentVal() {
+    public double getCurrentVal() {
         return currentVal;
     }
 
-    public void updateVal(Double val){currentVal = val;}
+    public void updateVal(double val){currentVal = val;}
 
 
     public String getInput(){return input;}
@@ -93,7 +94,7 @@ public class State {
         isError = error;
     }
 
-  /*  public Boolean isStored(){return isStored;}
+    public Boolean isStored(){return isStored;}
 
-    public void setIsStored(Boolean stored){isStored = stored;}*/
+    public void setIsStored(Boolean stored){isStored = stored;}
 }

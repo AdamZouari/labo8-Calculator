@@ -5,7 +5,7 @@ public class MoreLess extends UnaryOperation{
     }
 
     @Override
-    Double calcul(Double val) {
+    double calcul(double val) {
         return -val;
     }
 
