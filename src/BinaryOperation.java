@@ -13,5 +13,5 @@ abstract class BinaryOperation extends Operator{
 
     }
 
-    abstract Double calcul(Double op1, Double op2);
+    abstract double calcul(double op1, double op2);
 }

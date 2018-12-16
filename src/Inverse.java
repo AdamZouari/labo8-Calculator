@@ -5,7 +5,7 @@ public class Inverse extends UnaryOperation{
     }
 
     @Override
-    Double calcul(Double val) {
+    double calcul(double val) {
 
         return 1/val;
     }

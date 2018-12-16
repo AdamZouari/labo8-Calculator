@@ -7,7 +7,7 @@ public class MS extends MemoryOperation {
     @Override
     void changeMemory() {
         state.setMemoryStore(state.getInput());
-        state.setEvaluated(true);
+        state.setIsStored(true);
     }
 
 }

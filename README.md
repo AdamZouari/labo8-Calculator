@@ -22,9 +22,9 @@ String coucou(double number) {
  }
  
  Ce qu'il reste à faire :
-    - checker tous ce qu'il manque et poser les questions (question coucou)
+    - checker tous ce qu'il manque et poser les questions (question coucou) - BON
     - corriger ce qu'il manque
-    - faire les erreur
+    - faire les erreur - BON
     - gérer les exceptions
     - faire le main de test
     - commenter
@@ -32,3 +32,10 @@ String coucou(double number) {
     - faire le rapport + UML
     - voir si on peut pas refactorer plus
     
+    
+  Ce qu'il reste comme erreur :
+  
+    - backspace après evaluation : soit mettre ce qu'il y a dans numbercration dans les sous classes / soit booleen isEvaluated / le mettre dans une autre classe
+   - MS
+    - J'ai pu écrire 06 en faisant . <= 6 - C'est bon 
+    -regarder si input = currentVal tous les temps Il faut justifier
