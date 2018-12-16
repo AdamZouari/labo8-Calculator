@@ -16,6 +16,6 @@ abstract class NumberCreation extends Operator {
         create(state.getInput());
         state.setEvaluated(false);
     }
-
+    //TODO changer en protected dans toutes les classes , laisser que execute() en public
     abstract void create(String val);
 }

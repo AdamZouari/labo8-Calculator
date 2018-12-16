@@ -4,6 +4,7 @@ abstract class BinaryOperation extends Operator{
         this.state = state;
     }
 
+    //TODO Checker si la pile est vide alors Error
     public void execute(){
 
         state.updateVal(calcul(state.pop(),Double.parseDouble(state.getInput())));
