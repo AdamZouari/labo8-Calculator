@@ -5,12 +5,13 @@ public class State {
     private Stack<Double> stack = new Stack<Double>();
     private Double currentVal;
     private String input, memoryStore;
-    private Boolean isEvaluated, isError;
+    private Boolean isEvaluated, isError; //isStored;
 
     public State(){
         input = "0";
         memoryStore = "0";
         isEvaluated = false;
+       // isStored = false;
     }
 
     public void push(Double d){
@@ -91,4 +92,8 @@ public class State {
     public void setError(Boolean error) {
         isError = error;
     }
+
+  /*  public Boolean isStored(){return isStored;}
+
+    public void setIsStored(Boolean stored){isStored = stored;}*/
 }

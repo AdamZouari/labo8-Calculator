@@ -9,7 +9,9 @@ abstract class NumberCreation extends Operator {
 
         if(state.isEvaluated()){
             //TODO c'est la même chose que enter voir s'il y a un moyen de l'appeler et est-ce que ce serait pertinent (on avait perdu des pts je crois ou on nous avait dit que c'était pas bien d'utiliser d'autre fonction)
-            state.push(Double.parseDouble(state.getInput()));
+            //if(state.isStored()) {
+                state.push(Double.parseDouble(state.getInput()));
+          //  }
             state.updateInput("0");
         }
 
