@@ -3,7 +3,7 @@
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
  * @version 1.0
  *
- *
+ * La classe NumberCreation concerne toute la partie affichage de l'état interne de notre calculatrice
  *
  */
 abstract class NumberCreation extends Operator {
