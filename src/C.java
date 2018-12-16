@@ -7,7 +7,6 @@ public class C extends MemoryOperation {
     @Override
     protected void changeMemory() {
         state.updateInput("0");
-        state.setError(false);
         state.cleanStack();
     }
 
