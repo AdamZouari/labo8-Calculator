@@ -39,3 +39,5 @@ String coucou(double number) {
    - MS
     - J'ai pu écrire 06 en faisant . <= 6 - C'est bon 
     -regarder si input = currentVal tous les temps - Il faut justifier
+    - Expliquer les erreurs dans le rapport
+    - Exception non traité volontairement(stack vide)

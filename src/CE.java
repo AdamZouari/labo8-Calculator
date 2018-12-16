@@ -7,7 +7,6 @@ public class CE extends MemoryOperation {
     @Override
     protected void changeMemory() {
         state.updateInput("0");
-        state.setError(false);
     }
 
 }

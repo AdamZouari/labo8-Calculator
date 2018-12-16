@@ -5,14 +5,11 @@ public class State {
     private Stack<Double> stack = new Stack<Double>();
     private double currentVal;
     private String input, memoryStore;
-    private Boolean isEvaluated, isError, isStored;
+    private boolean isEvaluated, isStored;
 
     public State(){
         input = "0";
         memoryStore = "0";
-        isEvaluated = false;
-        isError = false;
-        isStored = false;
     }
 
     public void push(double d){
@@ -45,7 +42,7 @@ public class State {
 
     }
 
-    public Boolean isEmptyStack(){
+    public boolean isEmptyStack(){
         return stack.isEmpty();
     }
 
@@ -57,7 +54,9 @@ public class State {
     public void updateVal(double val){currentVal = val;}
 
 
-    public String getInput(){return input;}
+    public String getInput(){
+        return input == "NaN" ? "Error" : input;
+    }
 
     public void appendInput(String val){input += val;}
 
@@ -78,7 +77,7 @@ public class State {
 
 
 
-    public Boolean isEvaluated() {
+    public boolean isEvaluated() {
         return isEvaluated;
     }
 
@@ -86,15 +85,9 @@ public class State {
         isEvaluated = evaluated;
     }
 
-    public Boolean isError() {
-        return isError;
-    }
 
-    public void setError(Boolean error) {
-        isError = error;
-    }
 
-    public Boolean isStored(){return isStored;}
+    public boolean isStored(){return isStored;}
 
     public void setIsStored(Boolean stored){isStored = stored;}
 }
