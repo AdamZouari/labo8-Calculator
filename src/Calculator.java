@@ -3,14 +3,27 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+/**
+ * Classe Calculator sert à représenter une calculatrice RPN en mode console.
+ *
+ */
 public class Calculator {
-	private State state;
+	private State state; // L'état de la calculatrice
+	private Map<String, Operator> operatorMap; // Liste des fonctionnalités (opérateurs) disponibles
 
-	public Calculator(State state) {
-		this.state = state;
+	/**
+	 * Constructeur de la classe
+	 */
+	public Calculator() {
+		state = new State();
+		operatorMap = new HashMap<>();
+		ajoutDeFonctionalite();
 	}
 
-	private void ajoutDeFonctionalite(Map<String, Operator> operatorMap, State state) {
+	/**
+	 * Méthode privé qui de permet de remplir la liste de fonctionnalité
+	 */
+	private void ajoutDeFonctionalite() {
 		// BinaryOperation
 		operatorMap.put("+", new Add(state));
 		operatorMap.put("-", new Substract(state));
@@ -29,39 +42,45 @@ public class Calculator {
 		operatorMap.put("<=", new Backspace(state));
 		operatorMap.put("CE", new CE(state));
 		operatorMap.put("C", new C(state));
-
-		// TODO Assistant: rajoute ta methode ici connard!
-
+		operatorMap.put("enter", new Enter(state));
+		
+		// ExitOperation 
+		operatorMap.put("exit", new ExitOperator());
+		
+		// Possibilité de rajout d'opérations
 	}
 
+	/**
+	 * Méthode lance la calculatrice
+	 */
 	public void calcul() {
-
-		State state = new State();
-		Map<String, Operator> operatorMap = new HashMap<>();
-		ajoutDeFonctionalite(operatorMap, state);
-
 		Scanner sin = new Scanner(System.in);
 		boolean isFirstEntry = true;
-
 		System.out.print("> ");
+		
 		while (sin.hasNext()) {
-			double d = 0;
-			if (sin.hasNextDouble()) { // l'entree est un réel
+			if (sin.hasNextDouble()) { 
+				
+				//Fait un Enter si l'utilisateur veut rentrer une deuxième valeur 
 				if (!isFirstEntry && !state.isEvaluated())
 					new Enter(state).execute();
-
-				d = sin.nextDouble();
+				
+				double d = sin.nextDouble();
 				new Number(Double.toString(d), state).execute();
 
 			} else {
 				String entry = sin.next();
+				
 				if (operatorMap.containsKey(entry)) {
 					operatorMap.get(entry).execute();
-				}else {
+				} else {
 					System.out.println("Entrée invalide ");
 				}
+				
 			}
+			// Affichage 
 			System.out.println("Current Value : " + state.getInput() + " Stack : " + Arrays.toString(state.getStack()));
+			
 			isFirstEntry = false;
 			System.out.print("> ");
 		}
@@ -69,7 +88,7 @@ public class Calculator {
 	}
 
 	public static void main(String[] args) {
-		Calculator calc = new Calculator(new State());
+		Calculator calc = new Calculator();
 		calc.calcul();
 	}
 
