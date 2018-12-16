@@ -57,9 +57,11 @@ public class Calculator {
 				String entry = sin.next();
 				if (operatorMap.containsKey(entry)) {
 					operatorMap.get(entry).execute();
+				}else {
+					System.out.println("Entrée invalide ");
 				}
 			}
-				System.out.println("Current Value : " + state.getInput() + " Stack : " + Arrays.toString(state.getStack()));
+			System.out.println("Current Value : " + state.getInput() + " Stack : " + Arrays.toString(state.getStack()));
 			isFirstEntry = false;
 			System.out.print("> ");
 		}
