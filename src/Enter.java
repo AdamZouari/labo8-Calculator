@@ -5,7 +5,7 @@ public class Enter extends MemoryOperation {
     }
 
     @Override
-    void changeMemory() {
+    protected void changeMemory() {
         state.push(Double.parseDouble(state.getInput()));
         state.updateInput("0");
     }

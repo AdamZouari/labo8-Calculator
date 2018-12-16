@@ -6,7 +6,7 @@ public class Dot extends NumberCreation{
     }
 
     @Override
-    void create(String val) {
+    protected void create(String val) {
 
         if(!val.contains(".")) {
             state.appendInput(".");

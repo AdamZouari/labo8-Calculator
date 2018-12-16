@@ -7,7 +7,7 @@ public class Backspace extends NumberCreation
     }
 
     @Override
-    void create(String val) {
+    protected void create(String val) {
             if (val.length() <= 1) {
                 state.updateInput("0");
             } else {

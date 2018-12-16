@@ -13,5 +13,5 @@ abstract class MemoryOperation extends Operator{
     }
 
 
-    abstract void changeMemory();
+    protected abstract void changeMemory();
 }

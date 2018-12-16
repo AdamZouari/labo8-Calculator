@@ -11,7 +11,7 @@ abstract class UnaryOperation extends Operator {
         state.setEvaluated(true);
     }
 
-    abstract double calcul(double val);
+    protected abstract double calcul(double val);
 
 }
 

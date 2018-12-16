@@ -1,4 +1,3 @@
-//TODO J'ai changé more Less de place pour qu'il puisse être fait sur une valeur évaluée
 abstract class NumberCreation extends Operator {
 
     NumberCreation(State state){
@@ -17,6 +16,5 @@ abstract class NumberCreation extends Operator {
 
         create(state.getInput());
     }
-    //TODO changer en protected dans toutes les classes , laisser que execute() en public
-    abstract void create(String val);
+    protected abstract void create(String val);
 }

@@ -6,7 +6,7 @@ public class Square extends UnaryOperation{
     }
 
     @Override
-    double calcul(double val) {
+    protected double calcul(double val) {
         return val * val;
     }
 }

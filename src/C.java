@@ -5,7 +5,7 @@ public class C extends MemoryOperation {
     }
 
     @Override
-    void changeMemory() {
+    protected void changeMemory() {
         state.updateInput("0");
         state.setError(false);
         state.cleanStack();

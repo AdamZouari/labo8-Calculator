@@ -8,7 +8,7 @@ public class Number extends NumberCreation{
     }
 
     @Override
-    void create(String val) {
+    protected void create(String val) {
 
        if(val.equals("0"))
             state.updateInput(number);

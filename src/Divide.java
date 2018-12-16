@@ -5,7 +5,7 @@ public class Divide extends BinaryOperation
     }
 
     @Override
-    double calcul(double op1, double op2) {
+    protected double calcul(double op1, double op2) {
         if(Double.compare(op1, 0) == 0 && Double.compare(op2, 0) == 0){
             state.setError(true);
             return 0.;

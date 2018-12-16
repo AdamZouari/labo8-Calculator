@@ -5,7 +5,7 @@ public class SquareRoot extends UnaryOperation {
     }
 
     @Override
-    double calcul(double val) {
+    protected double calcul(double val) {
         if(val < 0){
             state.setError(true);
             return 0.;
