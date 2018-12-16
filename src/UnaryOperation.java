@@ -1,3 +1,11 @@
+/**
+ *
+ * @author Zouari Adam, Blanco Guillaume & Zied Naimi
+ * @version 1.0
+ *
+ *
+ *
+ */
 abstract class UnaryOperation extends Operator {
 
     //TODO voir si on pourra pas factoriser unary et binary

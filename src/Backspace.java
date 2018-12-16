@@ -1,4 +1,11 @@
-// TODO voir ou le met dans l'arbo et empecher si evaluer
+/**
+ *
+ * @author Zouari Adam, Blanco Guillaume & Zied Naimi
+ * @version 1.0
+ *
+ *
+ *
+ */
 public class Backspace extends NumberCreation
 {
 

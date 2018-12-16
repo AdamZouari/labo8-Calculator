@@ -1,3 +1,11 @@
+/**
+ *
+ * @author Zouari Adam, Blanco Guillaume & Zied Naimi
+ * @version 1.0
+ *
+ *
+ *
+ */
 public class C extends MemoryOperation {
 
     public C(State state){

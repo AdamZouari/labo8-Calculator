@@ -1,3 +1,11 @@
+/**
+ *
+ * @author Zouari Adam, Blanco Guillaume & Zied Naimi
+ * @version 1.0
+ *
+ *
+ *
+ */
 public class Enter extends MemoryOperation {
 
     public Enter(State state){

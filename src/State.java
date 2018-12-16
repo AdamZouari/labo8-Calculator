@@ -1,11 +1,18 @@
 import java.util.Stack;
-
+/**
+ *
+ * @author Zouari Adam, Blanco Guillaume & Zied Naimi
+ * @version 1.0
+ *
+ *
+ *
+ */
 public class State {
 
     private Stack<Double> stack = new Stack<Double>();
     private double currentVal;
     private String input, memoryStore;
-    private boolean isEvaluated, isStored;
+    private boolean isEvaluated;
 
     public State(){
         input = "0";
@@ -85,9 +92,4 @@ public class State {
         isEvaluated = evaluated;
     }
 
-
-
-    public boolean isStored(){return isStored;}
-
-    public void setIsStored(Boolean stored){isStored = stored;}
 }

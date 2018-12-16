@@ -1,5 +1,11 @@
-//TODO modifier ces putains de noms
-
+/**
+ *
+ * @author Zouari Adam, Blanco Guillaume & Zied Naimi
+ * @version 1.0
+ *
+ *
+ *
+ */
 abstract class MemoryOperation extends Operator{
 
     MemoryOperation(State state){

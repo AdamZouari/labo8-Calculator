@@ -4,9 +4,14 @@ import java.util.Map;
 import java.util.Scanner;
 
 /**
- * Classe Calculator sert à représenter une calculatrice RPN en mode console.
+ *
+ * @author Zouari Adam, Blanco Guillaume & Zied Naimi
+ * @version 1.0
+ *
+ * La classe Calculator sert à représenter la calculatrice en mode console
  *
  */
+
 public class Calculator {
 	private State state; // L'état de la calculatrice
 	private Map<String, Operator> operatorMap; // Liste des fonctionnalités (opérateurs) disponibles

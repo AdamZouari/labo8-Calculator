@@ -1,3 +1,11 @@
+/**
+ *
+ * @author Zouari Adam, Blanco Guillaume & Zied Naimi
+ * @version 1.0
+ *
+ *
+ *
+ */
 abstract class NumberCreation extends Operator {
 
     NumberCreation(State state){
@@ -6,13 +14,11 @@ abstract class NumberCreation extends Operator {
 
     public void execute(){
 
-            if (state.isEvaluated() || state.isStored()) {
+            if (state.isEvaluated()) {
                 if(this.getClass() == Backspace.class) {
                     return;
                 }
-                if(!state.isStored()) {
-                    state.push(Double.parseDouble(state.getInput()));
-                }
+                state.push(Double.parseDouble(state.getInput()));
                 state.updateInput("0");
                 state.setEvaluated(false);
             }

@@ -23,10 +23,10 @@ String coucou(double number) {
  
  Ce qu'il reste à faire :
     - checker tous ce qu'il manque et poser les questions (question coucou) - BON
-    - corriger ce qu'il manque
+    - corriger ce qu'il manque - BON
     - faire les erreur - BON
-    - gérer les exceptions
-    - faire le main de test
+    - gérer les exceptions - REGARDER ENCORE
+    - faire le main de test - PLUTOT GRILLE DE TEST
     - commenter
     - organiser en package & réduire la visibilité
     - faire le rapport + UML
@@ -36,8 +36,8 @@ String coucou(double number) {
   Ce qu'il reste comme erreur :
   
     - backspace après evaluation : soit mettre ce qu'il y a dans numbercration dans les sous classes / soit booleen isEvaluated / le mettre dans une autre classe
-    - MS
-    - J'ai pu écrire 06 en faisant . <= 6 - C'est bon 
+
     -regarder si input = currentVal tous les temps - Il faut justifier
-    - Expliquer les erreurs dans le rapport
+    - Expliquer les erreurs dans le rapport et demander si pas trop minimaliste
     - Exception non traité volontairement(stack vide)
+    

@@ -1,3 +1,11 @@
+/**
+ *
+ * @author Zouari Adam, Blanco Guillaume & Zied Naimi
+ * @version 1.0
+ *
+ *
+ *
+ */
 public class MS extends MemoryOperation {
 
     public MS(State state){
@@ -7,7 +15,7 @@ public class MS extends MemoryOperation {
     @Override
     protected void changeMemory() {
         state.setMemoryStore(state.getInput());
-        state.setIsStored(true);
+        state.setEvaluated(true);
     }
 
 }
