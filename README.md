@@ -44,6 +44,5 @@ String coucou(double number) {
     
     CE QU'IL RESTE A FAIRE 
     -   UML & TROUVER l'ERREUR EN MODE CONSOLE ( ZIED)
-    - RAPPORT (GUILLAUME)
-    -PACKAGE ( ADAM)
+  
     
