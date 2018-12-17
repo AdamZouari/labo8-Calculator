@@ -22,7 +22,7 @@ abstract class UnaryOperation extends Operator {
      */
     public void execute() {
         state.updateVal(calcul(Double.parseDouble(state.getInput())));
-        state.updateInput(String.valueOf(state.getCurrentVal()));
+        state.updateInput(String.valueOf(state.getCalculVal()));
         state.setEvaluated(true);
     }
 

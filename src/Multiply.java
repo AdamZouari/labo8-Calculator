@@ -8,6 +8,10 @@
  */
 public class Multiply extends BinaryOperation {
 
+
+    /**
+     * @param state état interne de la machine
+     */
     Multiply(State state) {
         super(state);
     }

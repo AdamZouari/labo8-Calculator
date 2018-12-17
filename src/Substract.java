@@ -9,6 +9,10 @@
 public class Substract extends BinaryOperation {
 
 
+
+    /**
+     * @param state état interne de la machine
+     */
     Substract(State state) {
         super(state);
     }

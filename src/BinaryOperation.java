@@ -33,7 +33,6 @@ abstract class BinaryOperation extends Operator{
         }
         catch (EmptyStackException e) // Considéré comme erreur pouvant ne pas etre traité
         {}
-
     }
 
     /**

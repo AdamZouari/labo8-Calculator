@@ -8,6 +8,10 @@
  */
 public class Add extends BinaryOperation{
 
+
+    /**
+     * @param state état interne de la machine
+     */
     Add(State state) {
         super(state);
     }
