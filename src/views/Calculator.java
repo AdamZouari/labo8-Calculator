@@ -59,10 +59,10 @@ public class Calculator {
 		operatorMap.put("CE", new CE(state));
 		operatorMap.put("C", new C(state));
 		operatorMap.put("enter", new Enter(state));
-		
-		// ExitOperation 
+
+		// ExitOperation
 		operatorMap.put("exit", new ExitOperator());
-		
+
 		// Possibilité de rajout d'opérations
 	}
 
@@ -73,28 +73,28 @@ public class Calculator {
 		Scanner sin = new Scanner(System.in);
 		boolean isFirstEntry = true;
 		System.out.print("> ");
-		
+
 		while (sin.hasNext()) {
 			if (sin.hasNextDouble()) {
 
 				double d = sin.nextDouble();
 
-				//Fait un Enter si l'utilisateur veut rentrer une deuxième valeur 
+				//Fait un Enter si l'utilisateur veut rentrer une deuxième valeur
 				if (!isFirstEntry && !state.isEvaluated())
 					new Enter(state).execute();
-				
+
 				new Number(Double.toString(d), state).execute();
 
 			} else {
 				String entry = sin.next();
-				
+
 				if (operatorMap.containsKey(entry)) {
 					operatorMap.get(entry).execute();
 				} else {
 					System.out.println("Entrée invalide ");
 				}
 			}
-			// Affichage 
+			// Affichage
 			System.out.println("Current Value : " + state.getInput() + " Stack : " + Arrays.toString(state.getStack()));
 
 			isFirstEntry = false;
