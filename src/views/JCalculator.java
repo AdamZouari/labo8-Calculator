@@ -75,10 +75,10 @@ public class JCalculator extends JFrame
   /*
    * Constructeur
    */
-  public JCalculator(State state)
+  public JCalculator()
   {
     super("JCalculator");
-    this.state = state;
+    state = new State();
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     getContentPane().setLayout(new GridBagLayout());
 
@@ -164,7 +164,6 @@ public class JCalculator extends JFrame
    * main()
    */
   public static void main(String args[]) {
-    State state = new State();
-    new JCalculator(state).setVisible(true);
+    new JCalculator().setVisible(true);
   }
 }
