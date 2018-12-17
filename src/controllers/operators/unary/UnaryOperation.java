@@ -1,3 +1,8 @@
+package controllers.operators.unary;
+
+import controllers.Operator;
+import controllers.State;
+
 /**
  *
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
@@ -11,7 +16,7 @@
 abstract class UnaryOperation extends Operator {
 
 
-    UnaryOperation(State state){
+    public UnaryOperation(State state){
         this.state = state;
     }
 

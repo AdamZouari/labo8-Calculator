@@ -1,3 +1,7 @@
+package controllers.operators.binary;
+
+import controllers.State;
+
 /**
  *
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
@@ -13,7 +17,7 @@ public class Divide extends BinaryOperation
     /**
      * @param state état interne de la machine
      */
-    Divide(State state) {
+    public Divide(State state) {
         super(state);
     }
 

@@ -1,3 +1,7 @@
+package controllers.operators.binary;
+
+import controllers.State;
+
 /**
  *
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
@@ -12,7 +16,7 @@ public class Add extends BinaryOperation{
     /**
      * @param state état interne de la machine
      */
-    Add(State state) {
+    public Add(State state) {
         super(state);
     }
 

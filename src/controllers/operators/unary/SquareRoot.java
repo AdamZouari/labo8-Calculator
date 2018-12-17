@@ -1,3 +1,7 @@
+package controllers.operators.unary;
+
+import controllers.State;
+
 /**
  *
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
@@ -11,7 +15,7 @@ public class SquareRoot extends UnaryOperation {
     /**
      * @param state état interne de la machine
      */
-    SquareRoot(State state) {
+    public SquareRoot(State state) {
         super(state);
     }
 

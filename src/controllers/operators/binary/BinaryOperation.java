@@ -1,3 +1,8 @@
+package controllers.operators.binary;
+
+import controllers.Operator;
+import controllers.State;
+
 import java.util.EmptyStackException;
 
 /**
@@ -11,9 +16,9 @@ import java.util.EmptyStackException;
  * qui sera redéfinie par toute ces sous classes
  *
  */
-abstract class BinaryOperation extends Operator{
+abstract class BinaryOperation extends Operator {
 
-    BinaryOperation(State state){
+    public BinaryOperation(State state){
         this.state = state;
     }
 

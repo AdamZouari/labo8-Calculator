@@ -1,3 +1,7 @@
+package controllers.operators.unary;
+
+import controllers.State;
+
 /**
  *
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
@@ -11,7 +15,7 @@ public class Square extends UnaryOperation{
     /**
      * @param state état interne de la machine
      */
-    Square(State state) {super(state);}
+    public Square(State state) {super(state);}
 
     /**
      *

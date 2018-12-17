@@ -1,3 +1,14 @@
+package views;
+
+import controllers.Operator;
+import controllers.State;
+import controllers.operators.ExitOperator;
+import controllers.operators.binary.*;
+import controllers.operators.unary.*;
+import controllers.operators.memory.*;
+import controllers.operators.numbers.*;
+import controllers.operators.numbers.Number;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -64,13 +75,14 @@ public class Calculator {
 		System.out.print("> ");
 		
 		while (sin.hasNext()) {
-			if (sin.hasNextDouble()) { 
-				
+			if (sin.hasNextDouble()) {
+
+				double d = sin.nextDouble();
+
 				//Fait un Enter si l'utilisateur veut rentrer une deuxième valeur 
 				if (!isFirstEntry && !state.isEvaluated())
 					new Enter(state).execute();
 				
-				double d = sin.nextDouble();
 				new Number(Double.toString(d), state).execute();
 
 			} else {
@@ -81,11 +93,10 @@ public class Calculator {
 				} else {
 					System.out.println("Entrée invalide ");
 				}
-				
 			}
 			// Affichage 
 			System.out.println("Current Value : " + state.getInput() + " Stack : " + Arrays.toString(state.getStack()));
-			
+
 			isFirstEntry = false;
 			System.out.print("> ");
 		}

@@ -1,3 +1,7 @@
+package controllers.operators.unary;
+
+import controllers.State;
+
 /**
  *
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
@@ -11,7 +15,7 @@ public class MoreLess extends UnaryOperation{
     /**
      * @param state état interne de la machine
      */
-    MoreLess(State state){
+    public MoreLess(State state){
         super(state);
     }
 

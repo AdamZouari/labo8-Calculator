@@ -1,3 +1,7 @@
+package controllers.operators;
+
+import controllers.Operator;
+
 /**
  *
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi

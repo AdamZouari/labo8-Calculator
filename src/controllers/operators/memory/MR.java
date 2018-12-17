@@ -1,3 +1,7 @@
+package controllers.operators.memory;
+
+import controllers.State;
+
 /**
  *
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
@@ -11,7 +15,7 @@ public class MR extends MemoryOperation {
     /**
      * @param state état interne de la machine
      */
-    MR(State state){
+    public MR(State state){
         super(state);
     }
 

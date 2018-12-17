@@ -1,3 +1,7 @@
+package controllers.operators.binary;
+
+import controllers.State;
+
 /**
  *
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
@@ -13,7 +17,7 @@ public class Substract extends BinaryOperation {
     /**
      * @param state état interne de la machine
      */
-    Substract(State state) {
+    public Substract(State state) {
         super(state);
     }
 

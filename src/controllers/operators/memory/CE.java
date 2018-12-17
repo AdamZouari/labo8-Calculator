@@ -1,3 +1,7 @@
+package controllers.operators.memory;
+
+import controllers.State;
+
 /**
  *
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
@@ -11,7 +15,7 @@ public class CE extends MemoryOperation {
     /**
      * @param state état interne de la machine
      */
-    CE(State state){
+    public CE(State state){
         super(state);
     }
 

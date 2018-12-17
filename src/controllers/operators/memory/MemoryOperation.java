@@ -1,3 +1,8 @@
+package controllers.operators.memory;
+
+import controllers.Operator;
+import controllers.State;
+
 /**
  *
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
@@ -5,9 +10,9 @@
  *
  * La classe MemoryOperation nous permet de regrouper les opérations de memoires et ainsi factoriser le code.
  */
-abstract class MemoryOperation extends Operator{
+abstract class MemoryOperation extends Operator {
 
-    MemoryOperation(State state){
+    public MemoryOperation(State state){
         this.state = state;
     }
 

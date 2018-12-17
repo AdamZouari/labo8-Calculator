@@ -1,3 +1,8 @@
+package controllers.operators.numbers;
+
+import controllers.Operator;
+import controllers.State;
+
 /**
  *
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
@@ -13,7 +18,7 @@ abstract class NumberCreation extends Operator {
     /**
      * @param state état interne de la machine
      */
-    NumberCreation(State state){
+    public NumberCreation(State state){
         this.state = state;
     }
 

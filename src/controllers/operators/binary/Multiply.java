@@ -1,3 +1,7 @@
+package controllers.operators.binary;
+
+import controllers.State;
+
 /**
  *
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
@@ -12,7 +16,7 @@ public class Multiply extends BinaryOperation {
     /**
      * @param state état interne de la machine
      */
-    Multiply(State state) {
+    public Multiply(State state) {
         super(state);
     }
 

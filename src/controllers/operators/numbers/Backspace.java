@@ -1,3 +1,7 @@
+package controllers.operators.numbers;
+
+import controllers.State;
+
 /**
  *
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
