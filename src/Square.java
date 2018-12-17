@@ -3,18 +3,21 @@
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
  * @version 1.0
  *
- *
+ * La classe Square permet de calculer le carré d'un nombre ( provenant de la valeur courante)
  *
  */
 public class Square extends UnaryOperation{
 
+    /**
+     * @param state état interne de la machine
+     */
+    Square(State state) {super(state);}
 
-    Square(State state) {
-        super(state);
-    }
-
+    /**
+     *
+     * @param val operande provenant de la valeur courante
+     * @return le carré de cette valeur
+     */
     @Override
-    protected double calcul(double val) {
-        return val * val;
-    }
+    protected double calcul(double val) { return val * val;}
 }

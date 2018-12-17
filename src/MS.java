@@ -3,19 +3,24 @@
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
  * @version 1.0
  *
- *
+ * La classe MS permet de stocker en mémoire la valeur courante
  *
  */
 public class MS extends MemoryOperation {
 
-    public MS(State state){
+    /**
+     * @param state état interne de la machine
+     */
+    MS(State state){
         super(state);
     }
-// TODO quand un memory store à été fait le prochain nombre doit supprimer celui actuel comme si un operation avait été faite
+
+    /**
+     * Méthode qui stocke la valeur en mémoire et considère la valeur comme évaluée
+     */
     @Override
     protected void changeMemory() {
         state.setMemoryStore(state.getInput());
         state.setEvaluated(true);
     }
-
 }
