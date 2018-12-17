@@ -15,6 +15,8 @@ public class Divide extends BinaryOperation
 {
 
     /**
+     * Constructeur de Divide
+     *
      * @param state état interne de la machine
      */
     public Divide(State state) {

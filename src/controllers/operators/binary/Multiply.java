@@ -14,6 +14,8 @@ public class Multiply extends BinaryOperation {
 
 
     /**
+     * Constructeur de Divide
+     *
      * @param state état interne de la machine
      */
     public Multiply(State state) {

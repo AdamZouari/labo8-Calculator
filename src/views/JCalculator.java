@@ -16,10 +16,10 @@ import java.awt.event.*;
 
 /**
  *
- * @author Zouari Adam, Blanco Guillaume & Zied Naimi
+ * Modified by Zouari Adam, Blanco Guillaume & Zied Naimi
  * @version 1.0
  *
- *
+ * La classe Calculator sert à représenter la calculatrice en mode console
  *
  */
 public class JCalculator extends JFrame
@@ -75,10 +75,10 @@ public class JCalculator extends JFrame
   /*
    * Constructeur
    */
-  public JCalculator(State state)
+  public JCalculator()
   {
     super("JCalculator");
-    this.state = state;
+    state = new State();
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     getContentPane().setLayout(new GridBagLayout());
 
@@ -164,7 +164,6 @@ public class JCalculator extends JFrame
    * main()
    */
   public static void main(String args[]) {
-    State state = new State();
-    new JCalculator(state).setVisible(true);
+    new JCalculator().setVisible(true);
   }
 }

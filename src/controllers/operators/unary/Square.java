@@ -13,6 +13,8 @@ import controllers.State;
 public class Square extends UnaryOperation{
 
     /**
+     *  Constructeur de Square
+     *
      * @param state état interne de la machine
      */
     public Square(State state) {super(state);}

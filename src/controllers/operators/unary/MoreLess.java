@@ -13,6 +13,8 @@ import controllers.State;
 public class MoreLess extends UnaryOperation{
 
     /**
+     * Constructeur de MoreLess
+     *
      * @param state état interne de la machine
      */
     public MoreLess(State state){

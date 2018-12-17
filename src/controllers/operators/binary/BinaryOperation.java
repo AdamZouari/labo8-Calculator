@@ -18,6 +18,11 @@ import java.util.EmptyStackException;
  */
 abstract class BinaryOperation extends Operator {
 
+    /**
+     * Constructeur de BinaryOperation
+     *
+     * @param state état interne de la machine
+     * */
     public BinaryOperation(State state){
         this.state = state;
     }

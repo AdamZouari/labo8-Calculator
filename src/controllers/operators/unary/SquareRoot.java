@@ -13,6 +13,8 @@ import controllers.State;
 public class SquareRoot extends UnaryOperation {
 
     /**
+     * Constructeur de SquareRoot
+     *
      * @param state état interne de la machine
      */
     public SquareRoot(State state) {

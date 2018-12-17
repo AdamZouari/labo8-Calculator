@@ -17,7 +17,8 @@ public class State {
     private boolean isEvaluated;
 
     /**
-     * permet d'initialiser nos variable dans "l'état de base"
+     * Consttructeur de State
+     *
      */
     public State(){
         input = "0";

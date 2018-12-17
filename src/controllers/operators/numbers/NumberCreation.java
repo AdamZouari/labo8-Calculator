@@ -16,6 +16,8 @@ abstract class NumberCreation extends Operator {
 
 
     /**
+     * Constructeur de NumberCreation
+     *
      * @param state état interne de la machine
      */
     public NumberCreation(State state){

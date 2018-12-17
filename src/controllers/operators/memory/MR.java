@@ -13,6 +13,8 @@ import controllers.State;
 public class MR extends MemoryOperation {
 
     /**
+     * Constructeur de MR
+     *
      * @param state état interne de la machine
      */
     public MR(State state){

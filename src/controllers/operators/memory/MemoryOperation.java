@@ -12,6 +12,11 @@ import controllers.State;
  */
 abstract class MemoryOperation extends Operator {
 
+    /**
+     * Constructeur de MemoryOperation
+     *
+     * @param state état interne de la machine
+     * */
     public MemoryOperation(State state){
         this.state = state;
     }

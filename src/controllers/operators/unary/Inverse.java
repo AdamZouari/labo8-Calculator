@@ -13,6 +13,8 @@ import controllers.State;
 public class Inverse extends UnaryOperation{
 
     /**
+     * Constructeur de Inverse
+     *
      * @param state état interne de la machine
      */
     public Inverse(State state) {

@@ -15,6 +15,7 @@ public class Number extends NumberCreation{
     private String number;
 
     /**
+     * Constructeur de Number
      *
      * @param number chiffre que l'on veut rajouter au nombre actuel
      * @param state état interne de la machine

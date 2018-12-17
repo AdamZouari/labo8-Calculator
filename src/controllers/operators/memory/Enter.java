@@ -13,6 +13,8 @@ import controllers.State;
 public class Enter extends MemoryOperation {
 
     /**
+     * Constructeur de Enter
+     *
      * @param state état interne de la machine
      */
     public Enter(State state){

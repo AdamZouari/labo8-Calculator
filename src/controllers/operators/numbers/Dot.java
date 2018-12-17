@@ -7,15 +7,14 @@ import controllers.State;
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
  * @version 1.0
  *
- *
  * La classe Dot nous permet de rajouter un point au nombre inscrit dans la valeur courante
  *
  */
 public class Dot extends NumberCreation{
 
-
-
     /**
+     * Constructeur de Dot
+     *
      * @param state état interne de la machine
      */
     public Dot(State state){
@@ -32,6 +31,5 @@ public class Dot extends NumberCreation{
         if(!val.contains(".")) {
             state.appendInput(".");
         }
-
     }
 }

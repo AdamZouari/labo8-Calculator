@@ -13,6 +13,8 @@ import controllers.State;
 public class MS extends MemoryOperation {
 
     /**
+     * Constructeur de MS
+     *
      * @param state état interne de la machine
      */
     public MS(State state){

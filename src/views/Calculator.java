@@ -24,11 +24,11 @@ import java.util.Scanner;
  */
 
 public class Calculator {
-	private State state; // L'état de la calculatrice
-	private Map<String, Operator> operatorMap; // Liste des fonctionnalités (opérateurs) disponibles
+	private State state;                        // L'état de la calculatrice
+	private Map<String, Operator> operatorMap;  // Liste des fonctionnalités (opérateurs) disponibles
 
 	/**
-	 * Constructeur de la classe
+	 * Constructeur de Calculator
 	 */
 	public Calculator() {
 		state = new State();
@@ -72,7 +72,7 @@ public class Calculator {
 	public void calcul() {
 		Scanner sin = new Scanner(System.in);
 		boolean isFirstEntry = true;
-		System.out.print("> ");
+		System.out.print("RPN Calculator : \n> ");
 
 		while (sin.hasNext()) {
 			if (sin.hasNextDouble()) {
@@ -91,7 +91,7 @@ public class Calculator {
 				if (operatorMap.containsKey(entry)) {
 					operatorMap.get(entry).execute();
 				} else {
-					System.out.println("Entrée invalide ");
+					System.out.println("Invalid input ");
 				}
 			}
 			// Affichage

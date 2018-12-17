@@ -16,6 +16,8 @@ public class Backspace extends NumberCreation
 
 
     /**
+     * Constructeur de Backspace
+     *
      * @param state état interne de la machine
      */
     public Backspace(State state){
@@ -44,5 +46,4 @@ public class Backspace extends NumberCreation
                 state.updateInput(state.getInput().substring(0, state.getInput().length() - 1));
             }
     }
-
 }

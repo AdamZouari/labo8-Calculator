@@ -15,6 +15,8 @@ public class Substract extends BinaryOperation {
 
 
     /**
+     * Constructeur de Substract
+     *
      * @param state état interne de la machine
      */
     public Substract(State state) {

@@ -13,6 +13,8 @@ import controllers.State;
 public class C extends MemoryOperation {
 
     /**
+     * Constructeur de C
+     *
      * @param state état interne de la machine
      */
     public C(State state){

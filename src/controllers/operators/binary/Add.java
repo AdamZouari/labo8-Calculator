@@ -14,6 +14,8 @@ public class Add extends BinaryOperation{
 
 
     /**
+     * Constructeur de Add
+     *
      * @param state état interne de la machine
      */
     public Add(State state) {
