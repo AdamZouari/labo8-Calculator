@@ -1,11 +1,13 @@
+import java.util.EmptyStackException;
+
 /**
  *
  * @author Zouari Adam, Blanco Guillaume & Zied Naimi
  * @version 1.0
  *
  * La classe binaryOperation nous permet de regrouper les opérations binaire et ainsi factoriser le code. Les classes
- * héritant de cette dernière sont : Add, Divie, Multiply et Substract. Elle implémente la fonction execute hérité de la
- * classe Operator qui va executer des actions à chaque fois qu'un opérateur est appelé. Elle déclare la fonction calcul
+ * héritant de cette dernière sont : Add, Divide, Multiply et Substract. Elle implémente la méthode execute hérité de la
+ * classe Operator qui va executer des actions à chaque fois qu'un opérateur est appelé. Elle déclare la méthode calcul
  * qui sera redéfinie par toute ces sous classes
  *
  */
@@ -22,9 +24,15 @@ abstract class BinaryOperation extends Operator{
      */
     public void execute(){
 
-        state.updateVal(calcul(state.pop(),Double.parseDouble(state.getInput())));
-        state.updateInput(String.valueOf(state.getCurrentVal()));
-        state.setEvaluated(true);
+        try  {
+
+            state.updateVal(calcul(state.pop(),Double.parseDouble(state.getInput())));
+            state.updateInput(String.valueOf(state.getCurrentVal()));
+            state.setEvaluated(true);
+
+        }
+        catch (EmptyStackException e) // Considéré comme erreur pouvant ne pas etre traité
+        {}
 
     }
 
