@@ -9,6 +9,10 @@
  */
 public class Divide extends BinaryOperation
 {
+
+    /**
+     * @param state état interne de la machine
+     */
     Divide(State state) {
         super(state);
     }

@@ -23,7 +23,7 @@ abstract class BinaryOperation extends Operator{
     public void execute(){
 
         state.updateVal(calcul(state.pop(),Double.parseDouble(state.getInput())));
-        state.updateInput(String.valueOf(state.getCurrentVal()));
+        state.updateInput(String.valueOf(state.getCalculVal()));
         state.setEvaluated(true);
 
     }

@@ -10,7 +10,7 @@ import java.util.Stack;
 public class State {
 
     private Stack<Double> stack = new Stack<Double>();
-    private double currentVal;
+    private double calculVal;
     private String input, memoryStore;
     private boolean isEvaluated;
 
@@ -54,11 +54,11 @@ public class State {
     }
 
 
-    public double getCurrentVal() {
-        return currentVal;
+    public double getCalculVal() {
+        return calculVal;
     }
 
-    public void updateVal(double val){currentVal = val;}
+    public void updateVal(double val){calculVal = val;}
 
 
     public String getInput(){
