@@ -27,7 +27,7 @@ String coucou(double number) {
     - faire les erreur - BON
     - gérer les exceptions - REGARDER ENCORE
     - faire le main de test - PLUTOT GRILLE DE TEST
-    - commenter
+    - commenter - Plus que calculator
     - organiser en package & réduire la visibilité
     - faire le rapport + UML
     - voir si on peut pas refactorer plus
@@ -40,4 +40,10 @@ String coucou(double number) {
     -regarder si input = currentVal tous les temps - Il faut justifier
     - Expliquer les erreurs dans le rapport et demander si pas trop minimaliste
     - Exception non traité volontairement(stack vide)
+    
+    
+    CE QU'IL RESTE A FAIRE 
+    -   UML & TROUVER l'ERREUR EN MODE CONSOLE ( ZIED)
+    - RAPPORT (GUILLAUME)
+    -PACKAGE ( ADAM)
     
